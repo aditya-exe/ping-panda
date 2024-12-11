@@ -4,11 +4,12 @@ import type { FC } from "react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/Icons";
+import { currentUser } from "@clerk/nextjs/server";
 
 interface INavbar {}
 
-const Navbar: FC<INavbar> = () => {
-  const user = false;
+const Navbar: FC<INavbar> = async () => {
+  const user = await currentUser();
 
   return (
     <nav className="sticky z-[100] h-16 inset-x-0 top-0 w-full border-b border-gray-200 bg-white/80 backdrop-blur-lg transition-all">
