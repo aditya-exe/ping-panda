@@ -1,8 +1,11 @@
 import {
+  ArrowLeft,
   ArrowRight,
+  BarChart2,
   Check,
   Clock,
   Cog,
+  Database,
   Gift,
   Headphones,
   HelpCircle,
@@ -11,11 +14,13 @@ import {
   Mic,
   Phone,
   Pin,
+  Plus,
   PlusCircle,
   Search,
   Smile,
   Star,
   Sticker,
+  Trash2,
   UserCircle,
   Video,
   type LucideProps,
@@ -70,4 +75,9 @@ export const Icons = {
       </svg>
     );
   },
+  arrowLeft: ArrowLeft,
+  database: Database,
+  barChart: BarChart2,
+  trash: Trash2,
+  plus: Plus,
 };
